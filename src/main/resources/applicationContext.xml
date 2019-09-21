@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="msg" class="com.dp.demo.entity.Msg">
+        <property name="sex" value="男"/>
+        <property name="name" value="大坡哥"/>
+        <property name="agr" value="18"/>
+    </bean>
+
+    <bean id="stu" class="com.dp.demo.entity.Student">
+        <property name="higer" value="1.80"/>
+        <property name="msg" ref="msg"/>
+    </bean>
+
+</beans>

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Controller;
  */
 @Controller("user")
 public class User2 {
-
     public void save(){
         System.out.println("核心方法");
     }
